@@ -18,6 +18,16 @@ body {
     margin: 0;
 }
 
+.title{
+  font-size: 45px;
+  background-color: gray;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px black;
+  color: white;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
 .stopwatch-container {
     text-align: center;
 }
