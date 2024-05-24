@@ -1,0 +1,76 @@
+:root {
+    --background-color: #e0e5e0; /* Dark blue */
+    --text-color: #ffffff; /* White */
+    --primary-color: #f44336; /* Red */
+    --secondary-color: #ffffff; /* White */
+    --accent-color: #ffc107; /* Yellow */
+    --black-color:#000000;
+  }
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.stopwatch-container {
+    text-align: center;
+}
+
+.stopwatch-display {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startBtn.running{
+  background-color: red;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.laps-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 200px;
+    color: var(--black-color); /* Dark gray text color */
+  }
+  
+  .lap-item {
+    padding: 10px;
+    background-color: var(--background-color); /* White background */
+    border-bottom: 1px solid var(--secondary-color);
+    transition: background-color 0.3s ease;
+  }
+  
+  .lap-item:last-child {
+    border-bottom: none;
+  }
+  
+  .lap-item:hover {
+    background-color: var(
+        --accent-color
+    ); /* Light gray background on hover */
+  }
